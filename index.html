@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +8,15 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <button id="play">Play</button>
-    <button id="pause">Pause</button>
-    
+    <div id="container">
+        <canvas id="canvas"></canvas>
+        <audio id="audio" controls>audio1</audio>
+        <input type='file' id='fileupload' accept='audio/*'/>
+    </div>
+
     <script src="script.js"></script>
 </body>
+
 </html>
