@@ -17,7 +17,7 @@ file.addEventListener('change', function () {
     analyser = audioContext.createAnalyser();
     audioSource.connect(analyser);
     analyser.connect(audioContext.destination);
-    analyser.fftSize = 1024;
+    analyser.fftSize = 512;
     const bufferLength = analyser.frequencyBinCount;
     const dataArray = new Uint8Array(bufferLength);
     const barWidth = canvas.width / bufferLength;
