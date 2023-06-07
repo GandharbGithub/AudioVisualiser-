@@ -37,7 +37,7 @@ function drawVisualiser(bufferLength, x, barWidth, barHeight, dataArray) {
         ctx.save();
         ctx.translate(canvas.width / 2, canvas.height / 2);
         ctx.rotate(i + Math.PI / bufferLength);
-        const hue = i*2;
+        const hue = i * i;
         ctx.fillStyle = 'hsl(' + hue + ', 100%, 50%) ';
         ctx.fillRect(0, 0, barWidth, barHeight);
         x += barWidth;
